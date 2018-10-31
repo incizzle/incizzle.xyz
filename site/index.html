@@ -9,9 +9,10 @@
 
       <link rel="stylesheet" href="css/style.css">
 
-<video id="video-background" autoplay loop plays-inline>
+<video id="video-background" autoplay muted loop plays-inline>
     <source src="./mrsjackson.mp4" type="video/mp4">
 </video>
+
 
 <script>
     function updateTime(){
@@ -24,11 +25,14 @@
     }
     var t_str = hours + ":" + minutes + ":" + seconds;
     if(hours > 11){
-        t_str += "PM";
+        t_str += " PM";
     } else {
-        t_str += "AM";
+        t_str += " AM";
     }
     document.getElementById('time_span').innerHTML = t_str;
+    // document.getElementById('video-background').unmute();
+    setTimeout(function(){
+    });
 }
 setInterval(updateTime, 1);
 var x = document.getElementById("video-background");
