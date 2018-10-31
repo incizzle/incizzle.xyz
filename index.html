@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sombra is OP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+<video id="video-background" autoplay loop plays-inline>
+    <source src="./mrsjackson.mp4" type="video/mp4">
+</video>
+
+<script>
+    function updateTime(){
+    var currentTime = new Date()
+    var hours = currentTime.getHours()
+    var minutes = currentTime.getMinutes()
+    var seconds = currentTime.getSeconds()
+    if (minutes < 10){
+        minutes = "0" + minutes
+    }
+    var t_str = hours + ":" + minutes + ":" + seconds;
+    if(hours > 11){
+        t_str += "PM";
+    } else {
+        t_str += "AM";
+    }
+    document.getElementById('time_span').innerHTML = t_str;
+}
+setInterval(updateTime, 1);
+var x = document.getElementById("video-background");
+x.volume=0.1;
+</script>
+</head>
+
+<body>
+
+  <header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="margin-bottom: 0px;margin-top: 0px;">ソムブラ</h1>
+    <div id="time_span"></div>
+<!--    <h1 id="time_span"></h1> -->
+  </header>
+ 
+<div class="bar">
+  <a href="javascript:;" class="toggle"><span>Menu</span></a>
+</div>
+
+<nav class="menu">
+  <ul>
+    <li><a href="http://steamcommunity.com/id/iNcizzle">STEAM</a></li>
+    <li><a href="http://steamcommunity.com/id/TheRealiNcizzle">STEAM 2</a></li>
+    <li><a href="https://www.twitch.tv/incizzle">TWITCH</a></li>
+    <li><a href="https://www.youtube.com/channel/UCPPcU274FMgCs-fHVHY969g">YOUTUBE</a></li>
+    <li><a href="https://github.com/incizzle">GITHUB</a></li>
+    <li><a href="https://discord.gg/eN45hFJ">DISCORD</a></li>
+  </ul>
+</nav>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
