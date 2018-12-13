@@ -1,0 +1,6 @@
+pipeline:
+  publish_server:
+    image: plugins/docker
+    repo: incizzle/incizzle-website
+    secrets: [ docker_username, docker_password ]
+    tag: [ latest ]
